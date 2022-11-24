@@ -1,0 +1,183 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: #0c0c0c;
+}
+/* CSS Stylings for Heading */
+
+.header {
+    text-align: center;
+    font: 2.18rem bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:1rem;
+    border-radius: 7px;
+    width: 98vw;
+    box-shadow: 0px 1px 12px 2px #949392;
+    background: linear-gradient(90deg, #fd1d1d 26%, #f6f0f0 41%, #ffffff 68%, #3ab445 100%);
+    animation:  header 2s ease-in-out 1;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-75%);
+    }
+ 
+}
+
+/* CSS Stylings for Image section */
+img{
+    border: 3px solid #f8f7e3;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    box-shadow: 0 1px 1px #e7c7c7;
+    animation: image 3s linear 1;
+}
+@keyframes image{
+    0%{
+        transform: translateX(-75%);
+    }
+}
+img:hover {
+    cursor: pointer;
+    border: 3px solid ;
+    box-shadow:2px 2px 1px 2px #7c45e4;
+}
+
+figcaption{
+    padding: 15px 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Sono', sans-serif;
+    text-transform: uppercase;
+}
+
+.image-grid{
+    padding: 15px 5px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 75px;
+}
+
+/* CSS Stylings for audio and footer section */
+#audio {
+  padding: 20px 50px;
+}
+#Audio-desciption{
+    color: #ffffff;
+    font-size:1.1rem ;
+}
+.footer {
+    text-align: center;
+    border-radius: 7px;
+    background-color: #6fccf1ee;
+    height: 60px;
+    width: 100%;
+    padding: 10px 5px;
+    
+}
+.material-symbols-rounded {
+    color: #160c1f;
+    height: 50px;
+    width: 20px;
+    position: absolute;
+} 
+#endsection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+/* For Maximum scrren width of 375px,768px cell phones and tablet sizes - alignment*/
+
+/* Maximum screen width 375 mobile phone screen size */
+
+ @media (max-width:375px){
+    .header{
+        font-size: 1.5rem;
+        padding: auto auto;
+    }
+    img{
+        width:350px;
+        height: 210px;
+        animation: none;
+    }
+    .image-grid{
+        padding: 15px auto;
+        row-gap: 30px;
+    }
+    .footer{
+        font-size: 1rem;
+    }
+    .material-symbols-rounded {
+        color: #160c1f;
+        padding: 1px;
+        height: 10px;
+        width: 20px;
+        display: inline-block;
+    } 
+    #endsection{
+      padding: 7px 0px 0px 15px;
+      border-radius: 5px;
+    }
+ }
+
+/* Maximum screen width 768 tablet screen size */
+
+ @media (max-width:768px){
+    .header{
+        font-size: 1.5rem;
+        padding: auto auto;
+    }
+    img{
+        width:350px;
+        height: 200px;
+    }
+    .image-grid{
+        padding: 10px 5px;
+        row-gap: 45px;
+    }
+    #endsection{
+      padding: 7px auto;
+      border-radius: 5px;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
